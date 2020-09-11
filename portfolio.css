@@ -1,0 +1,164 @@
+ body{
+  padding: 0;
+  margin: 0;
+  
+ }
+ header{
+  padding: 1%;
+  background-color: #0d59bd;
+  position: fixed;
+  width: 100vw;
+}
+a{
+  border-sizing:box-model;
+  text-decoration: none;
+  margin: 2%;
+  padding: 0.5%;
+  color: #FFFFFF;
+  font-size: 20PX;
+}
+a:hover{
+  background-color: #FFFFFF;
+  color: #000000;
+  border:2px solid lightgreen;
+  border-radius: 10px;
+}
+.title{
+  font-size: 30px;
+}
+.container{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.details{
+   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.dp{
+   width:30%;
+  height: 300px;
+  margin: 10% 5% 2% 2%;
+  background-image: url("file:///C:/Users/raj%20ranjan/Desktop/DESKTOP/LOVE/45834.jpg");
+  background-repeat: no-repeat;
+  border:5px solid  #0d59bd ;
+  border-radius: 20px;
+  background-size: 101% 101%;
+  background-position: center;
+  justify-content: center;
+
+}
+
+.detail{
+   width:40%;
+  height: 300px;
+  margin: 5% 2% 2% 5%;
+  font-size: 20px;
+
+}
+
+.inform{
+  margin: 10% 0%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.profile{
+  border: 3px solid #0d59bd;
+  box-shadow: 5px 10px #0d59bd;
+  width:30%;
+  height: 300px;
+  padding:2% 1%;
+  margin: 0 5% 2% 2%;
+  text-align:left;
+  font-size: 20px;
+  overflow: auto;
+
+}
+
+.des{
+  padding: 1%;
+  width:auto;
+  height: auto;
+  margin: 0 5%;
+  overflow: auto;
+  cursor: default;
+  cursor: pointer;
+  font-size: 20px;
+  border-bottom: 2px double black;
+  color: #000000;
+  }
+
+@media screen and (max-width: 900px){
+
+ header .link{
+    display:block;
+    text-align: center;
+  }
+
+  .details{
+    display:block;
+    justify-content: center;
+
+  }
+  .dp{
+   width:30%;
+  height: 200px;
+  margin: 25% 5% 2% 20%;
+  background-image: url("file:///C:/Users/raj%20ranjan/Desktop/DESKTOP/LOVE/45834.jpg");
+  background-repeat: no-repeat;
+  border:5px solid  #0d59bd ;
+  border-radius: 20px;
+  background-size: 101% 101%;
+  background-position: center;
+  
+
+}
+
+.detail{
+   width:40%;
+  height: 300px;
+  margin: 5% 2% 2% 20%;
+  font-size: 18px;
+
+}
+
+.inform{
+  display:block;
+  justify-content: center;
+}
+
+.des{
+  border-bottom: none;
+  padding: 1%;
+  width:auto;
+  height: auto;
+  margin: 5% 5% 5% 20%;
+  overflow: auto;
+  cursor: default;
+  cursor: pointer;
+  font-size: 20px;
+
+  }
+
+.profile{
+  border: 3px solid #0d59bd;
+  box-shadow: 5px 10px #0d59bd;
+  width:auto;
+  height: 200px;
+  padding:2% 1%;
+  margin: 3% 5% 5% 20%;
+  text-align:left;
+  font-size: 20px;
+  overflow: auto;
+
+}
+
+}

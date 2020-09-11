@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <title>Portfolio</title>
+   
+  </head>
+  <body>
+    	<header class="navbar navbar-default">
+       		<a class="title" href="file:///F:/web-D%202.0/Udemy/Template/portfolio/portfolio.html">Portfolio</a>
+       		<a class="link" href="#details">Profile</a>
+       		<a class="link" href="#inform">Dashboard</a>
+       	</header>
+        <div class="container">
+        <div class="details " id="details" >
+          <div class="dp">
+          </div>
+          <div class="detail" >
+            <h1 id="name" title="name">Raj Ranjan</h1>
+            <p>Hazaribag, Jharkhand, India<p>
+              <br><br>
+
+              <b> *</b> Pursuing BTech in Computer Science from Techno Main saltlake, Kolkata.<br><br> <b> *</b> Skilled in Python (Programming Language), Robotic Process Automation(Ui Path), Selenium WebDriver, C(Programming Language), Writing and Programming.
+             </p>
+          </div>
+        </div>
+       	<div class="inform" id="inform">
+          <div class="des" id="des">
+            <h1 id="Dashboard" onclick="Dashboard()">Dashboard</h1>
+            
+            <br>
+            <ul>
+              <li onclick="update(this)" title="Experience">Experience
+                <p id="Experience" hidden>
+                  <br>
+                  <b>Experience</b><br><br>
+                  1. Public Relation Manager<br>
+                  2. Social Media Manager<br>
+                  3. Member of Eclectica<br>
+                 
+                </p>
+                   <ol>
+                     <li title="PRM" ondblclick="update(this)" >Public Relation Manager
+                      <p hidden id="PRM">
+                       <br> <b>Public Relations Manager</b><br><br>
+                        Eclectica - The literary committee of Techno Main Salt Lake 
+                        <br> Working from - Jul 2020 - Present (1 month +)
+                      </p>
+                    </li>
+                     <li title="SMM" ondblclick="update(this)" >Social Media Manager
+                      <p hidden id="SMM">
+                        <br><b>Social Media Manager</b><br><br>
+                            Edlox<br>
+                            Jun 2020 - Present (2 months +)<br>
+                            Fostering the Future of Education<br>
+                      </p>
+                     </li>
+                     
+                   </ol>
+              </li>
+              <li title="Education" onclick="update(this)">Education
+                <p id="Education" hidden>
+                  <br><b>Techno India Institute of Technology</b><br><br>
+                   Bachelor of Technology - BTech, Computer Science and engineering 2018 - 2022
+                    <br>presently in 3nd year.
+                </p>
+              </li>
+              <li title="LC" onclick="update(this)">Licences & Certifications
+                <p id="LC" hidden>
+                  <br><b>Licences & Certifications</b><br><br>
+                  1. Design and analysis of algorithm - NPTEL <br>
+                  2. Developing soft skills and personality - NPTEL<br>
+                  3. Robotic Process Automation Foundation - UiPath<br>
+                  4.Complete Python Bootcamp: Go from zero to hero in python3 - Udemy<br>
+                </p>
+              </li>
+              <li title="skills" onclick="update(this)">Skills
+                <p id="skills" hidden>
+                  <br><b>Skills</b><br><br>
+                  • Robotic Process Automation (RPA)<br>• Python (Programming Language)<br>• Selenium WebDriver<br>• Programming<br>•  
+Writing<br>• C (Programming Language)<br>• basic python<br>• Microsoft Excel<br>• Team Management<br>• Management<br>• Management
+                  
+                </p></li>
+            </ul>
+
+          </div>
+       		<div class="profile" id="profile">
+       		 <p>Click on the Dashboard Activities to view details.<br>Double-click for ordered list activities.</p>
+       		</div>
+       	</div>
+   </div>
+</body>
+
+<script type="text/javascript">
+  function update(element){
+    var x= element.title;
+    document.getElementById("profile").innerHTML=document.getElementById(x).innerHTML;
+    document.getElementById("profile").style.backgroundImage="none";
+  }
+  function Dashboard(){
+    document.getElementById("profile").innerHTML="Click on the Dashboard Activities to view details.<br> Double-click for ordered list activities."
+  }
+  
+</script>
+  
+</html>
